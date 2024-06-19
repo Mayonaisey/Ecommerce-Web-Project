@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Product</title>
+    <link rel="stylesheet" href="./css/adminchanges.css">
+</head>
+<body>
+    <header>
+        <h1>Add New Product</h1>
+    </header>
+    <form id="newProductForm" action="/adminchange" method="post" >
+        <label for="image1">Product Image 1:</label>
+        <input type="file" id="image1" name="image1" accept="image/*" ><br>
+
+        <label for="image2">Product Image 2:</label>
+        <input type="file" id="image2" name="image2" accept="image/*" ><br>
+
+        <label for="image3">Product Image 3:</label>
+        <input type="file" id="image3" name="image3" accept="image/*"><br>
+
+        <label for="name">Product Name:</label>
+        <input type="text" id="name" name="name" ><br>
+
+        <label for="type">Product Type:</label>
+        <input type="text" id="type" name="type" ><br>
+
+        <label for="price">Product Price:</label>
+        <input type="text" id="price" name="price" ><br>
+
+        <label for="description">Product Description:</label>
+        <input type="text" id="description" name="description" ><br>
+
+        <label for="size">Product Size:</label>
+        <select id="size" name="size">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="2XL">2XL</option>
+        </select><br>
+
+        <label for="gender">Product Gender:</label>
+        <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+
+        <label for="quantity">Product Quantity:</label>
+        <input type="text" id="quantity" name="quantity"><br>
+
+        <input type="submit" value="Add Product">
+    </form>
+</body>
+</html>
